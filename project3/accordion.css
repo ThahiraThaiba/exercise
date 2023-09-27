@@ -1,0 +1,65 @@
+body{
+  background: url("pice.avif") no-repeat;
+  background-size: cover;
+  height:200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion{
+  background-color: white;
+  width:50%;
+  padding: 30px;
+  border-radius: 35px;
+}
+.accordion .accordion-title{
+  text-align: center;
+  margin-bottom: 40px;
+ 
+}
+
+.accordion .content-container .question{
+  padding:20px 0;
+  font-size: 20px;
+  border-bottom: solid 1px black;
+  cursor: pointer;
+
+  position:relative;
+}
+
+.accordion .content-container .question::after{
+  content: "+";
+  position: absolute;
+  right:-5px;
+}
+
+.accordion .content-container .answer{
+  padding-top: 20px;
+  font-size: 20px;
+  line-height: 1.5;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  transition: .5s;
+
+
+}
+/* active class created in js ,toggles class-answer then height of answer container will be 150px*/
+.accordion .content-container.active .answer {
+  height:150px;
+}
+
+.accordion .content-container.active .question {
+  font-size: 15px;
+  transition: .5s;
+}
+
+.accordion .content-container.active .question::after{
+  content: "-";
+  font-size: 30px;
+  transition: .5s;
+}
+
+
+

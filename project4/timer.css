@@ -1,0 +1,48 @@
+body{
+  height:100vh;
+  background: url("timer.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width:40%;
+  height: 250px;
+  background-color: black;
+}
+
+#timer{
+  color:white;
+  text-align: center;
+  font-size: 72px;
+  margin: 0px auto;
+  padding: 10px;
+
+}
+.buttons{
+  text-align: center;
+}
+
+button{
+  margin:5px 10px;
+  border:none;
+
+}
+button i {
+  color:white;
+  font-size: 50px;
+}
+
+#startstop{
+  background-color: green;
+}
+
+#reset{
+  background-color: brown;
+}
+
+#pause {
+  background-color: orange;
+}

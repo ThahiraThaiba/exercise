@@ -1,0 +1,79 @@
+body{
+  background: url("bg2.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative; 
+}
+
+#modal-btn{
+  position:absolute;
+  top:70%;
+  bottom:20%;
+  right: 30px;
+  border-radius: 5px;
+  border:solid 1px grey;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 100;
+  padding:4px;
+}
+#modal-btn:hover{
+  cursor: pointer;
+  background-color:white ;
+  color:black;
+}
+
+#modal{
+  background-color: white;
+  padding:5px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 3px;
+  position:absolute;
+  bottom:50%;
+  right:50%;
+  width:150px;
+  height: 70px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  
+ /* set animations*/
+ animation-name: modalanimation;
+ animation-duration: .4s;
+
+}
+#close-btn{
+  font-size:40px;
+  font-weight: 700;
+  margin:6px;
+}
+#close-btn:hover{
+  cursor: pointer;
+  color:red;
+}
+
+#modal-container{
+  display: none;
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  z-index: 1;
+  background-color:rgba(0, 0, 0, 0.2)
+}
+
+@keyframes modalanimation {
+  from {
+    top:-300%;
+    opacity:0;
+  }
+  to {
+    top:50%;
+    opacity: 1;
+  }
+}
+

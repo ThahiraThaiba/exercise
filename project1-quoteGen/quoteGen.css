@@ -1,0 +1,49 @@
+*{ /* universal element selector */
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body{
+  display: flex; /* in order to center the items */
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  text-align: center;
+  background: url("bg.avif"), no-repeat center;
+}
+.container{
+  width:400px;
+  height:200px;
+  background-color: rgb(133, 224, 91);
+  
+}
+.header{
+  border:solid 2px black;
+  background-color: lightgray;
+  padding:2px;
+  margin:2px auto;
+}
+.main-text .quote{ /* Selects elements with quote that is a descendant of an element with main text*/
+  margin:3px;
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+.main-text .author{
+  color:blue;
+  font-size:20px;
+  margin: 4px;
+  text-transform: uppercase;
+}
+.button-area button{  /* button of class button-area*/
+  font: size 15px;
+}
+
+.button-area button:hover{
+  cursor: pointer;
+}
+.button-area button:active{ /*when clicked will activate*/
+  background-color: rgb(67, 233, 211);
+}
