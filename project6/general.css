@@ -1,0 +1,42 @@
+*{
+  margin:0;
+  box-sizing: border-box;
+  font-family: lato;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.global-container{
+  height:80%;
+  width:50%;
+  background-color:white;
+  display:flex;
+  flex-direction:column;
+
+}
+.community-info{
+  flex:3;
+  background-color: #ffffc9;
+}
+.monthly-info{
+  display:flex;
+  flex:4;
+  color:white;
+  }
+  
+  .monthly-info .monthly-cost{
+    background-color:teal;
+    height:100%;
+    flex:1;
+}
+.monthly-info .company-info{
+    background-color:rgb(61 175 61);
+    height:100%;
+    flex:1;
+  
+}
+
