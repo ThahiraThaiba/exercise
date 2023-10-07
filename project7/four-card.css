@@ -1,0 +1,125 @@
+html{
+  font-size: 10px;
+}
+*{
+  margin:0;
+  box-sizing: border-box;
+  font-family: lato;
+}
+
+body{
+  height:100vh;
+  background-color: lightcyan;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.global-container{
+  height:60%;
+  width:50%;
+  padding:10px;
+  background-color:white;
+  display:flex;
+  flex-direction: column;
+}
+.head-section{
+  background-color: white;
+  flex:1;
+  text-align: center;
+}
+.head-section p{
+ width:60%;
+ margin:auto;
+ margin-bottom: 10px;
+}
+.body-section{
+  font-size: 1.5rem;
+  color:white;
+  background-color: white;
+  flex:5;
+  padding:8px;
+
+  display:flex;
+  gap:5px;
+  align-items:center;
+}
+.supervisor{
+  background-color: black;
+  flex:1;
+  height:50%;
+  border-top: 5px solid rgba(3, 161, 189, 0.884);
+}
+
+.middle-section{
+  background-color: white;
+
+  flex:1;
+  height:100%;
+
+  display:flex;
+  flex-direction: column;
+  gap:5px;
+  justify-content: center;
+}
+.team-builder{
+  background-color: black;
+  flex:1;
+  border-top: 5px solid rgba(184, 6, 238, 0.884);
+  
+}
+.manager{
+  background-color: black;
+  flex:1;
+  border-top: 5px solid rgba(241, 238, 8, 0.884);
+  
+}
+.calculator{
+  background-color: black;
+  flex:1;
+  height:50%;
+  border-top: 5px solid rgba(6, 240, 26, 0.884);
+}
+
+.card{
+  padding:10px;
+  box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.6); 
+  position:relative;
+}
+img{
+  width:35px;
+  position: absolute;
+  bottom: 3px;
+  right:3px;
+}
+.card p{
+  padding-top: 8px;
+  font-size:1rem;
+}
+
+
+@media(max-width:900px){
+  .global-container{
+    width:60%;
+  
+  }
+ 
+}
+@media(max-width:700px){
+  .global-container{
+    width:70%;
+  
+  }
+ 
+}
+@media(max-width:550px){
+  .body-section{
+    flex-direction: column;  
+    align-items:normal;
+  }
+
+
+  .card{
+    min-height: 100px;
+  }
+
+}
