@@ -34,7 +34,7 @@
         </div>
       </div>
       <div class="img-section">
-        <img src="illustration-working.svg" />
+        <img class="mobile-img" src="illustration-working.svg" />
       </div>
       <div class="slogan-section">
         <div class="quote-content">
@@ -49,13 +49,16 @@
         </div>
       </div>
       <div class="search-bar-section">
-        <input
-          type="text"
-          placeholder="Shorten a link here..."
-          class="input-link"
-        />
+        <div class="input-container">
+          <input
+            type="text"
+            placeholder="Shorten a link here..."
+            class="input-link"
+          />
+          <div class="error">&nbsp;</div>
+        </div>
+
         <button class="shorten-btn">Shorten it!</button>
-        <div class="error">&nbsp;</div>
       </div>
 
       <div class="advanced-statistics">
@@ -68,10 +71,9 @@
           </p>
         </div>
         <div class="stat-body">
-          <div class="straight-line"></div>
-          <div class="brand-reg container">
+          <div class="brand-reg stat-container">
             <div class="icon">
-              <img src="icon-brand-recognition.svg" />
+              <img class="icon-img" src="icon-brand-recognition.svg" />
             </div>
             <div class="brand-head heading">Brand Recognition</div>
             <div class="brand-text body-text">
@@ -80,9 +82,9 @@
               content
             </div>
           </div>
-          <div class="detailed-rec container">
+          <div class="detailed-rec stat-container">
             <div class="icon">
-              <img src="icon-detailed-records.svg" />
+              <img class="icon-img" src="icon-detailed-records.svg" />
             </div>
             <div class="rec-head heading">Detailed Records</div>
             <div class="rec-text body-text">
@@ -91,9 +93,9 @@
               decisions.
             </div>
           </div>
-          <div class="customize container">
+          <div class="customize stat-container">
             <div class="icon">
-              <img src="icon-fully-customizable.svg" />
+              <img class="icon-img" src="icon-fully-customizable.svg" />
             </div>
             <div class="customize-head heading">Fully Customizable</div>
             <div class="customize-text body-text">
