@@ -145,7 +145,7 @@ body{
   margin:auto;
 }
 .error{
-color:red;
+color:rgb(247, 46, 46);
 position:absolute;
 top:77%;
 left:7%;
@@ -337,6 +337,7 @@ button:hover{
 {
   list-style: none;
   flex: 3;
+  display: flex;
   font-size: 0.8rem;
   padding: 10px;
 }
@@ -359,9 +360,20 @@ button:hover{
   border:2px solid hsl(180, 66%, 49%);
   background-color:white;
 }
+ .linkList .deleteTask{
+  background-color: rgb(247, 46, 46);
+  width:8%;
+
+}
+.deleteTask:hover{
+  color:rgb(247, 46, 46);
+  border:2px solid rgb(247, 46, 46);
+  background-color: white;
+}
 
 .shorternLink a{
   word-break: break-word;
+  align-self: center;
 }
 
 
@@ -519,6 +531,13 @@ button:hover{
 
   .linkList{
     display:block;
+    padding-bottom: 8px;
+  }
+  .linkList .deleteTask{
+    display: block;
+    width: 35%;
+    margin: auto;
+    
   }
 
   .stat-head-section{
