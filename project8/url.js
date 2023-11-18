@@ -110,6 +110,13 @@ function createRow(fullLink, shortUrlId){
 
 function displayData(data){
   linkContainer.innerHTML='' //not to repeat the entire list (double etc...)
+  if(data.length==0){
+    paginationContainer.style.display="none"
+  }
+  else{
+    paginationContainer.style.display="flex"
+
+  }
   for(let i=0;i< data.length;i++){ 
     createRow(data[i].full, `${data[i].short}`)
   }
@@ -138,6 +145,7 @@ function loadData(offset){
   getUrls(getUserId(),offset).then(function(res) 
   { return res.json(); }) 
   .then(function (data) {
+    
     displayData(data.shortUrls)
     getPageNumbers(data.totalCount, offset)
     spinner.style.display="none";
