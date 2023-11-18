@@ -9,7 +9,6 @@ const pageNumbers = document.querySelector(".pageNumbers"); // btwn prev and nex
 const nextButton = document.getElementById("next"); //  next button
 
 const baseUrl="https://urlshortener-m778.onrender.com/urls" ;//api link
-const fullBase="https://urlshortener-m778.onrender.com/"
 const headers = {
   'Accept': 'application/json',
   'Content-Type': 'application/json'
@@ -76,8 +75,8 @@ function createRow(fullLink, shortUrlId){
   let shortItem=document.createElement('a'); //creates anchorlinks
 
 
- shortItem.innerText= `${fullBase}/${shortUrlId}`
- shortItem.href=`${fullBase}/${shortUrlId}` //set/returns the link value
+ shortItem.innerText= `${baseUrl}/${shortUrlId}`
+ shortItem.href=`${baseUrl}/${shortUrlId}` //set/returns the link value
  shortItem.target = "_blank"; //opens in new tab
 
 
