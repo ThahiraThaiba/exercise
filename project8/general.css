@@ -286,9 +286,9 @@ font-size:0.7rem;
   top:18px;
 
 }
-.footer{
+/* .footer{
   height:60vh;
-}
+} */
 .purple-footer{
   background:url("bg-boost-desktop.svg") no-repeat;
   background-color: hsl(260, 41%, 11%);
