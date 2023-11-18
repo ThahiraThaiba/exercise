@@ -53,6 +53,8 @@
         </div>
       </div>
       <div class="search-bar-section">
+        <div class="loader"></div>
+
         <div class="input-container">
           <input
             type="text"
@@ -66,7 +68,28 @@
       </div>
 
       <div class="advanced-statistics">
+        <div class="drop-down-box">
+          <div>
+            <select name="page-no" class="page-no">
+              <option value="0">Page Size</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+            </select>
+          </div>
+        </div>
         <div class="link-list-container"></div>
+        <div class="pagination-container">
+          <div class="pagination">
+            <button class="control" id="prev" title="Previous page">
+              < Prev
+            </button>
+            <div class="pageNumbers">
+              <!--Page Numbers-->
+            </div>
+            <button class="control" id="next" title="Next page">Next ></button>
+          </div>
+        </div>
         <div class="stat-head-section">
           <h1 class="stat-head">Advanced Statistics</h1>
           <p class="stat-text">
@@ -161,7 +184,8 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="\test folder\localstore.js"></script>
+
+    <script type="text/javascript" src="localstore.js"></script>
 
     <script type="text/javascript" src="url.js"></script>
   </body>
